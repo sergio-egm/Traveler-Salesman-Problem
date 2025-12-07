@@ -61,7 +61,7 @@ void bruteForce(const vector<pair<double,double>> &cities , bool print_file){
     cout << endl;
 
     if(print_file){
-        ofstream fout("paths.dat");
+        ofstream fout("dat/paths.dat");
 
         for(auto &i : save)
             fout << i << ' ';

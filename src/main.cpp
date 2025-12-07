@@ -29,7 +29,7 @@ vector<pair<double, double>> random(unsigned int N){
     vector<pair<double, double>> res;
     srand(3);
 
-    ofstream fout("cities.dat");
+    ofstream fout("dat/cities.dat");
 
     for(unsigned int i = 0 ; i < N ; i++){
         res.push_back(pair<double,double>((double) (rand())/RAND_MAX ,  (double) (rand())/RAND_MAX));

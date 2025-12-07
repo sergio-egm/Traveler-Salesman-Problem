@@ -9,18 +9,18 @@ CXXFLAGS := -Wall -pedantic
 
 CXX  := g++
 SRC  := main.cpp
-BIN  := bin/$(SRC:.cpp=.x)
+BIN  := $(SRC:%.cpp=bin/%.x)
 LIBS := Bruteforce.cpp MST.cpp
 
 all: ${BIN}
 
 
-${BIN}: $(:SRC=src/) $(:LIBS=src) | bin
+${BIN}: $(SRC:%=src/%) $(LIBS:%=src/%) | bin
 	$(CXX) $(CXXFLAGS) $< -o $@
 
 run: ${BIN}
 	./$< ${NCITIES} 1
-	python3 graph.py
+#	python3 graph.py
 
 bin:
 	mkdir -p bin

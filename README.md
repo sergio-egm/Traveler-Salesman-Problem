@@ -18,7 +18,7 @@ The problem is solved in two different ways:
 
 ## Setting Parameters
 
-Is possible to sets the parameters using the [Makefile](Makefile).
+It's possible to sets the parameters using the [Makefile](Makefile).
 
 ```bash
 # PARAMETERS
