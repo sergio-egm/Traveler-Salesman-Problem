@@ -9,12 +9,18 @@ The problem is solved in two different ways:
 - __Brute Force__: chek every possible path and find the shortest one $\left(O\left(\frac{(n_{cities}-1)!}{2}\right)\right)$.
 - __Minimum Spanning Trees__: find an approximate solution using the _MST_ and _Prim's algorithm_ $\left(O\left(n_{nodes}\log\left(\frac{m_{edges}}{n_{nodes}}\right)\right)\right)$.
 
-## Code
+## Repository Structure
 
+- [BIN](bin/)
+  - [Main](bin/main.x)
+- [DAT](dat/)
+  - [Cities](dat/cities.dat)
+  - [Edges](dat/edges.dat)
+  - [Paths](dat/paths.dat)
 - [SRC](src/)
-    - [Main](src/main.cpp)
-    - [Brute Force](src/Bruteforce.cpp)
-    - [MST](src/MST.cpp)
+  - [Main](src/main.cpp)
+  - [Brute Force](src/Bruteforce.cpp)
+  - [MST](src/MST.cpp)
 
 ## Setting Parameters
 
