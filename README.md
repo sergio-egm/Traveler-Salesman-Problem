@@ -21,6 +21,10 @@ The problem is solved in two different ways:
   - [Main](src/main.cpp)
   - [Brute Force](src/Bruteforce.cpp)
   - [MST](src/MST.cpp)
+- [graph.py](graph.py)
+- [License](LICENSE)
+- [MakeFile](Makefile)
+- [README](README.md)
 
 ## Setting Parameters
 
