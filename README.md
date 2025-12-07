@@ -14,7 +14,7 @@ The problem is solved in two different ways:
 - [SRC](src/)
     - [Main](src/main.cpp)
     - [Brute Force](src/Bruteforce.cpp)
-    - MST - uploading.
+    - [MST](src/MST.cpp)
 
 ## Setting Parameters
 

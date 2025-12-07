@@ -20,7 +20,7 @@ ${BIN}: $(SRC:%=src/%) $(LIBS:%=src/%) | bin
 
 run: ${BIN}
 	./$< ${NCITIES} 1
-#	python3 graph.py
+	python3 graph.py
 
 bin:
 	mkdir -p bin

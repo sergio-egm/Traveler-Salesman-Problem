@@ -44,7 +44,7 @@ vector<pair<double, double>> random(unsigned int N){
 
 void run(vector<pair<double, double>> &cities , bool print_file){
     bruteForce(cities , print_file);
-    MST mst(&cities , print_file);
+    MST mst(&cities);
 
-    mst.path();
+    mst.path(print_file);
 }

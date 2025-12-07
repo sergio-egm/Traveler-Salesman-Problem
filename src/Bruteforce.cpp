@@ -65,6 +65,8 @@ void bruteForce(const vector<pair<double,double>> &cities , bool print_file){
 
         for(auto &i : save)
             fout << i << ' ';
+            
+        fout << endl;
 
         fout.close();
     }
