@@ -18,7 +18,7 @@ ${BIN}: ${SRC} Bruteforce.cpp MST.cpp | bin
 	$(CXX) $(CXXFLAGS) $< -o $@
 
 run: ${BIN}
-	./$< ${NCITIES} > paths.dat
+	./$< ${NCITIES} 1
 	python3 graph.py
 
 bin:

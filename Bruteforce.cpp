@@ -3,6 +3,7 @@
 #include<cmath>
 #include<algorithm>
 #include<limits>
+#include<fstream>
 
 using namespace std;
 
@@ -12,7 +13,7 @@ double distance(const pair<double, double> &c1, const pair<double, double> &c2){
     return sqrt(pow(c1.first - c2.first , 2) + pow(c1.second - c2.second , 2));
 }
 
-void bruteForce(const vector<pair<double,double>> &cities){
+void bruteForce(const vector<pair<double,double>> &cities , bool print_file){
     vector<vector<double>> mat;
     vector<double> row(cities.size() , 0);
 
@@ -58,6 +59,15 @@ void bruteForce(const vector<pair<double,double>> &cities){
         cout << i << ' ';
 
     cout << endl;
+
+    if(print_file){
+        ofstream fout("paths.dat");
+
+        for(auto &i : save)
+            fout << i << ' ';
+
+        fout.close();
+    }
     
     return;
 }

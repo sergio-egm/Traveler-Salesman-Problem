@@ -8,16 +8,19 @@
 using namespace std;
 
 vector<pair<double,double>> random(unsigned int N);
-void run(vector<pair<double , double>> &cities);
+void run(vector<pair<double , double>> &cities , bool print_file);
 
 int main(int argc , char** argv){
+    int print_file = 0;
     if(argc < 2){
         cerr << "ERROR: Number of cities not specified!" << endl;
         return -1; 
     }
+    else if(argc > 2)
+        print_file = atoi(argv[2]);
 
     vector<pair<double,double>> cities = random(atoi(argv[1]));
-    run(cities);
+    run(cities , print_file);
     
     return 0;
 }
@@ -39,9 +42,9 @@ vector<pair<double, double>> random(unsigned int N){
     return res;
 }
 
-void run(vector<pair<double, double>> &cities){
-    bruteForce(cities);
-    MST mst(&cities);
+void run(vector<pair<double, double>> &cities , bool print_file){
+    bruteForce(cities , print_file);
+    MST mst(&cities , print_file);
 
     mst.path();
 }
