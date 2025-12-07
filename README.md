@@ -11,9 +11,10 @@ The problem is solved in two different ways:
 
 ## Code
 
-- [Main](main.cpp)
-- [Brute Force](Bruteforce.cpp)
-- MST - uploading.
+- [SRC](src/)
+    - [Main](src/main.cpp)
+    - [Brute Force](src/Bruteforce.cpp)
+    - MST - uploading.
 
 ## Setting Parameters
 

@@ -7,14 +7,15 @@ NCITIES = 8
 # MAKEFILE CODE
 CXXFLAGS := -Wall -pedantic
 
-CXX := g++
-SRC := main.cpp
-BIN := bin/$(SRC:.cpp=.x)
+CXX  := g++
+SRC  := main.cpp
+BIN  := bin/$(SRC:.cpp=.x)
+LIBS := Bruteforce.cpp MST.cpp
 
 all: ${BIN}
 
 
-${BIN}: ${SRC} Bruteforce.cpp MST.cpp | bin
+${BIN}: $(:SRC=src/) $(:LIBS=src) | bin
 	$(CXX) $(CXXFLAGS) $< -o $@
 
 run: ${BIN}
